@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>網頁作業</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link href="css/hover.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-Wrapper">
+        <header>
+            <div id="offer-1">
+                <div style="text-align: center;">
+                    <h1 class="animate__animated animate__flipInX " style="color: white;">EVEL YN</h1>
+                    <img class="searchIcon" src="images/search-2.png" width="40px" height="40px">
+                    <img class="starIcon" src="images/star.png" width="40px" height="40px">
+                </div>
+            </div>
+        </header>
+        <div id="content-1">
+            <div class="row" style="margin-top:150px">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-center" aria-current="page" onclick="ShowAll()">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-center" onclick="ShowBag()">BAG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-center" onclick="ShowShoe()">SHOE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvr-underline-from-center" onclick="ShowPerfume()">PERFUME</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row" id="marquee"style="margin-top:25px">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/img1.jpg" height="700px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/img2.jpg" height="700px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/img3.jpg" height="700px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/img4.jpg" height="700px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/img5.jpg" height="700px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/img6.jpg" height="700px" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row" id="Perfume" style="margin-top:50px;">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="images/item3.png" width="400px" height="400px" class="card-img-top" alt="..." data-tilt>
+                        <div class="card-body">
+                            <h4 class="card-title">Orange Blossom Cologne 橙花香水</h4>
+                            <p class="card-text">A shimmering garden oasis. Clementine flower sparkles over a heart of orange blossom and water lily, with warm undertones of orris and balsamic vetiver.</p>
+                            <a href="#" class="btn btn-outline-dark hvr-sweep-to-right">Add Favorite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="images/item2.png" width="400px" height="400px" class="card-img-top" alt="..." data-tilt>
+                        <div class="card-body">
+                            <h4 class="card-title">Sea Daffodil Cologne 地中海水仙香水</h4>
+                            <p class="card-text">A chance discovery along the coast: rare and exquisite white sea daffodils in the salt-blown sands of southern Italy. This solar floral, luminous and radiant with ylang ylang, is rooted in the warmth of vanilla entwined with creamy sandalwood.</p>
+                            <a href="#" class="btn btn-outline-dark hvr-sweep-to-right">Add Favorite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="images/item1.png" width="400px" height="400px" class="card-img-top" alt="..." data-tilt>
+                        <div class="card-body" style="margin:0px 20px;">
+                            <h4 class="card-title">自由不羈淡香精</h4>
+                            <p class="card-text">The burning sensuality of the orange blossom flowers from Morocco, twisted with the aromatic boldness of lavender from France.
+                                Lavender, traditionally used in male perfumery is given an ultra-feminine facet culminating in a couture-infused scent with a uniquely androgynous YSL attitude.</p>
+                            <a href="#" class="btn btn-outline-dark hvr-sweep-to-right">Add Favorite</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="Bag" style="margin-top:50px">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="images/item8.png" width="400px" height="400px" class="card-img-top" alt="..." data-tilt>
+                        <div class="card-body">
+                            <h4 class="card-title">JACQUEMUS 黑色 Le Chiquito 手提包</h4>
+                            <p class="card-text">Simple silhouette and extreme leather workmanship, the classic trapezoidal long handle is designed with individuality, revealing the restrained luxury taste in every gesture.</p>
+                            <a href="#" class="btn btn-outline-dark hvr-sweep-to-right">Add Favorite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="images/item7.png" width="400px" height="400px" class="card-img-top" alt="..." data-tilt>
+                        <div class="card-body">
+                            <h4 class="card-title">CHLOE 鏈條錢包 WOODY 袋</h4>
+                            <p class="card-text">Neutral bags are key for Spring '21, and this 'Woody' tote seen on Chloé's runway stood out to our buyers as one of the chicest and most versatile options. Made in Italy from water-resistant cotton-canvas, it has a spacious, rectangular silhouette trimmed with leather and logo-printed webbing. The top handles are long enough to carry comfortably over your shoulder.</p>
+                            <a href="#" class="btn btn-outline-dark hvr-sweep-to-right">Add Favorite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="images/item9.png" width="400px" height="400px" class="card-img-top" alt="..." data-tilt>
+                        <div class="card-body" style="margin:0px 20px;">
+                            <h4 class="card-title">YSL 鏈條錢包</h4>
+                            <p class="card-text">Saint laurent monogram small envelope clutch decorated with metal ysl initials, featuring a removable saint laurent paris embossed card case.</p>
+                            <a href="#" class="btn btn-outline-dark hvr-sweep-to-right">Add Favorite</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="Shoe" style="margin-top:50px">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="images/item4.png" width="400px" height="400px" class="card-img-top" alt="..." data-tilt>
+                        <div class="card-body">
+                            <h4 class="card-title">ALALA BOMBE 涼鞋</h4>
+                            <p class="card-text">Alaïa's 'La Bombe' sandals are deftly crafted by hand and beautiful to admire - that's why Azzedine was often referred to as an artist or couturier (rather than a designer) because he had both a great eye and construction know-how. This suede pair is decorated with spheres and gunmetal pyramid studs at the supportive ankle strap. The blush hue allows you to be braver with a pedicure color, too.</p>
+                            <a href="#" class="btn btn-outline-dark hvr-sweep-to-right">Add Favorite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="images/item5.png" width="400px" height="400px" class="card-img-top" alt="..." data-tilt>
+                        <div class="card-body">
+                            <h4 class="card-title">GIANVITO ROSSI 靴子</h4>
+                            <p class="card-text">One thing is for sure, you'll be wearing Gianvitto Rossi's Chelsea boots at every possible opportunity. When they're so easy to style and timless who can blame you.</p>
+                            <a href="#" class="btn btn-outline-dark hvr-sweep-to-right">Add Favorite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="images/item6.png" width="400px" height="400px" class="card-img-top" alt="..." data-tilt>
+                        <div class="card-body" style="margin:0px 20px;">
+                            <h4 class="card-title">MELROSE 極簡質感純色牛皮樂福</h4>
+                            <p class="card-text">Made of selected fine textured cowhide fabric
+                                Simple solid color design shows neat texture and taste.</p>
+                            <a href="#" class="btn btn-outline-dark hvr-sweep-to-right">Add Favorite</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="footerlinks">
+                <div>
+                    <p style="color: #777;margin-bottom: 0px;">Copyright © 2022 XXXXXX.&nbsp;&nbsp;&nbsp;All Rights Reserved. Design by XXXXXX
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tilt.jquery.js"></script>
+</body>
+
+</html>
+<style type="text/css">
+.box {
+    background-color: #3333;
+    width: 200px;
+    height: 200px;
+}
+
+#main-Wrapper {
+    width: 100%;
+}
+
+#offer-1 {
+    font-family: 'Montserrat', sans-serif;
+    clear: both;
+    background-color: black;
+    color: rgba(146, 146, 146, 1.00);
+    padding-top: 30px;
+    padding-bottom: 57px;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    height: 150px;
+}
+
+#offer-1 h1 {
+    display: inline;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-size: 72px;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 90px;
+    right: 115px;
+}
+
+.starIcon {
+    position: absolute;
+    top: 90px;
+    right: 50px;
+}
+
+#content-1 {
+    clear: both;
+    padding-top: 29px;
+    margin: 0 10%;
+    margin-bottom: 50px;
+}
+
+#footerlinks {
+    clear: both;
+    overflow: auto;
+    background-color: black;
+    font-family: source-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.8;
+    padding-top: 22px;
+    padding-left: 22px;
+    text-align: center;
+    padding-bottom: 22px;
+    padding-right: 22px;
+}
+
+.card-body {
+    margin: 5px 20px;
+}
+
+.hvr-underline-from-center {
+    color: black;
+}
+
+.hvr-underline-from-center:before {
+    background: black;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+    color: black;
+}
+
+.hvr-sweep-to-right:before {
+    background: black;
+}
+
+@media(max-width: 768px) {
+    .searchIcon {
+        display: none;
+    }
+
+    .starIcon {
+        display: none;
+    }
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+　　ShowAll();
+});    
+const ShowAll = function() {
+    $("#marquee").show();
+    $("#Bag").hide();
+    $("#Shoe").hide();
+    $("#Perfume").hide();
+}
+const ShowBag = function() {
+    $("#Bag").show();
+    $("#Shoe").hide();
+    $("#Perfume").hide();
+    $("#marquee").hide();
+}
+const ShowShoe = function() {
+    $("#Bag").hide();
+    $("#Shoe").show();
+    $("#Perfume").hide();
+    $("#marquee").hide();
+}
+const ShowPerfume = function() {
+    $("#Bag").hide();
+    $("#Shoe").hide();
+    $("#Perfume").show();
+    $("#marquee").hide();
+}
+</script>
